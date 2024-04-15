@@ -28,7 +28,7 @@ function showToggle() {
 
 
 function clickButton() {
-    form.style.top = '10%'
+   
     form.style.left = "50%"
     form.style.transform = "translateX(-50%)"
     mascara.style.visibility = "visible"
