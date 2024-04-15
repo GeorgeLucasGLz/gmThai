@@ -42,9 +42,9 @@ body {
 
 header #links {
 
-    overflow-x: hidden;
+   
     z-index: 1000;
-    position: fixed;
+    position: absolute;
     display: flex;
     gap: 15px;
     text-shadow: 2px 2px 15px;
