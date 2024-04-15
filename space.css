@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/check-o.css');
+
+.space-mask {
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.space-section {
+    z-index: 1;
+    position: relative;
+    background-image: url(./img/tatameBG.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+
+.space-section h1 {
+    z-index: 1;
+    text-transform: uppercase;
+    margin: 70px 0 30px 0px;
+    text-shadow: 0 0 10px;
+    font-size: 30px;
+
+}
+
+
+/*VIDEO 1*/
+.main-space-1 {
+    z-index: 1;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#video1 {
+    border-radius: 15px;
+    border: 2px solid red;
+    box-shadow: 0 0 15px red;
+    background-color: black;
+    width: 350px;
+}
+
+.info-space-1 {
+
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding-inline: 25px;
+    padding-top: 50px;
+    width: 400px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px red;
+
+}
+
+.main-space-1 ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.main-space-1 i {
+    color: rgb(255, 187, 0);
+}
+
+
+.main-space-1 li {
+    letter-spacing: 1px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.box-logo {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.logo-space {
+
+    margin-top: 5px;
+    border-radius: 50%;
+    width: 60px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 10px;
+}
+
+
+
+
+
+/*VIDEO 2*/
+
+.main-space-2 {
+    z-index: 1;
+    background-color: black;
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info-space-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    padding: 10px 25px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px red;
+    width: 400px;
+
+}
+
+.info-space-2 p {
+    letter-spacing: 1px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+
+#video2 {
+    border-radius: 15px;
+    border: 2px solid red;
+    box-shadow: 0 0 15px red;
+    background-color: black;
+    width: 350px;
+    height: 100%;
+}
+
+@media screen and (width < 1350px) {
+
+    .space-section {
+        background-color: red;
+        padding: 30px 0 0 0;
+    }
+
+}
+
+@media screen and (width < 850px) {
+
+
+
+
+    #video1 {
+
+        width: 550px;
+    }
+
+    #video2 {
+
+        width: 550px;
+        height: 687px;
+    }
+
+    .main-space-1 {
+
+        flex-direction: column;
+
+    }
+
+    .info-space-1 {
+        padding-top: 30px;
+        width: 550px;
+        height: 490px;
+    }
+
+    .main-space-2 {
+        flex-direction: column-reverse;
+    }
+
+    .info-space-2 {
+
+        width: 550px;
+        height: 550px;
+    }
+
+    .info-space-2 p {
+        font-size: 18px;
+    }
+
+    .box-logo {
+
+        display: flex;
+        justify-content: center;
+        margin-top: 28px;
+    }
+
+    .logo-space {
+
+
+        border-radius: 50%;
+        width: 60px;
+        border: 3px solid black;
+        box-shadow: 0px 0px 10px;
+    }
+
+    .main-space-2 .logo-space {
+        margin-top: 250px;
+    }
+}
+
+
+@media screen and (width < 800px) {
+
+    #video1 {
+        width: 350px;
+    }
+
+    .info-space-1 {
+
+        width: 350px;
+
+    }
+
+    #video2 {
+        width: 350px;
+        height: 440px;
+    }
+
+    .info-space-2 {
+
+        width: 350px;
+        height: 450px;
+    }
+
+    .main-space-2 .logo-space {
+        margin-top: 45px;
+    }
+
+    .space-section {
+        width: 100vw;
+    }
+
+}
+
+@media screen and (width < 650px){
+    
+    .space-section h1{
+        font-size: 25px;
+    }
+}
+
+@media screen and (width < 380px) {
+
+    #video1{
+        width: 300px;
+    }
+
+    .info-space-1 {
+
+        width: 300px;
+        height: 520px;
+
+    }
+
+    #video2 {
+        width: 300px;
+        height: 375px;
+    }
+
+    .info-space-2 {
+
+        width: 300px;
+        height: 550px;
+
+    }
+}

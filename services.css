@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+/*CONTEÚDO*/
+
+.mascara {
+
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.9;
+
+
+}
+
+/*TURMAS*/
+
+
+.classes-mask {
+
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.classes-section {
+
+    z-index: 0;
+    position: relative;
+    background-image: url(./img/ringue2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    padding-top: 80px;
+
+
+
+}
+
+
+
+.list-services {
+
+    width: 100%;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 150px;
+    padding-bottom: 70px;
+
+
+}
+
+.card-list h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-list {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 100%;
+    color: #fff;
+    background-image: radial-gradient(circle, rgba(245, 0, 0, 0.5), rgba(204, 0, 7, 0.5), rgba(164, 0, 10, 0.5), rgba(126, 0, 7, 0.5), rgba(89, 0, 0, 0.5));
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 70px;
+    border: 2px solid red;
+    box-shadow: 0 0 10px red;
+    margin: 0 auto;
+}
+
+.img-list {
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.image-side {
+    text-shadow: 2px 2px 7px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-card {
+
+    margin-top: 20px;
+    text-shadow: 2px 2px 3px black;
+    max-width: 450px;
+    height: 100%;
+    padding-left: 10px;
+
+}
+
+.info-card p {
+    letter-spacing: 2px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+
+.card-logo {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    top: 50px;
+    right: 5px;
+}
+
+.card-logo img {
+
+    border: 3px solid black;
+    box-shadow: 0px 0px 10px;
+    border-radius: 50%;
+    width: 80px;
+
+
+}
+
+
+
+
+/*FORMULÁRIO*/
+
+
+
+.link-zap {
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#zap-img {
+    width: 50px;
+
+}
+
+#zap-img:hover {
+    transition: 0.4s ease-in-out;
+    width: 53px;
+
+}
+
+#fale-conosco {
+    z-index: 1;
+    top: 20%;
+    left: -340px;
+    background-color: rgb(34, 34, 34);
+    position: fixed;
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: end;
+    width: 350px;
+}
+
+#mascara-formulario {
+    visibility: hidden;
+    z-index: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    left: 0;
+
+
+}
+
+
+input {
+    color: #fff;
+    padding: 7px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 0, 0);
+    outline-color: red;
+    background-color: rgb(53, 53, 53);
+}
+
+textarea {
+
+    color: #fff;
+    outline-color: red;
+    width: 100%;
+    height: 200px;
+    padding: 7px;
+    border-radius: 7px;
+    border: 2px solid red;
+    resize: none;
+    background-color: rgb(53, 53, 53);
+}
+
+@media screen and (max-width: 1320px) {
+
+    .list-services {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+
+    }
+
+    .card-list {
+        width: 80%;
+    }
+
+
+
+}
+
+@media screen and(width < 1080px) {
+    .classes-section {
+
+        background-image: url(./img/ringue2.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        padding-top: 80px;
+
+
+
+    }
+}
+
+@media screen and (width < 850px) {
+    .img-list {
+
+        margin: 0 auto;
+        width: 270px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+
+    .info-card {
+        font-size: 15px;
+        margin-top: 50px;
+    }
+
+
+}
+
+@media (width < 780px) {
+
+
+    .card-list {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-list h1 {
+        text-align: center;
+    }
+
+    .img-list {
+        width: 350px;
+        height: 250px;
+    }
+
+    .info-card {
+
+        margin-top: 20px;
+    }
+
+
+}
+
+
+
+
+@media screen and (width < 470px) {
+    .img-list {
+        width: 270px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+
+
+    .info-card {
+
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .info-card p {
+        font-size: 15px;
+    }
+
+    .card-logo {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        position: relative;
+        top: 50px;
+        right: 5px;
+    }
+
+    .card-logo img {
+
+        border: 3px solid black;
+        box-shadow: 0px 0px 10px;
+        border-radius: 50%;
+        width: 80px;
+
+
+    }
+}
+
+@media screen and (width < 450px) {
+
+
+
+
+    header a {
+        font-size: 15px;
+    }
+
+    #fale-conosco {
+
+        width: 300px;
+    }
+
+    input {
+        padding: 7px;
+        height: 40px;
+        border-radius: 5px;
+        border: 2px solid rgb(255, 0, 0);
+        outline-color: red;
+        background-color: rgb(53, 53, 53);
+    }
+
+    textarea {
+
+        color: #fff;
+        outline-color: red;
+        width: 100%;
+        height: 200px;
+        padding: 7px;
+        border-radius: 7px;
+        border: 2px solid red;
+        resize: none;
+        background-color: rgb(53, 53, 53);
+    }
+}
+
+
+@media screen and(width < 350px) {
+    header a {
+        font-size: 13px;
+    }
+}

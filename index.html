@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./services.css">
+    <link rel="stylesheet" href="./coach.css">
+    <link rel="stylesheet" href="./space.css">
+    <link rel="stylesheet" href="./days.css">
+    <link rel="stylesheet" href="./navToggle.css">
+    <title>Academia Brazilian Jiu-Jitsu</title>
+
+</head>
+
+
+
+
+<body>
+
+    <header>
+
+        <ul id="links">
+            <li id="btn-home"><a href="#">Início</a></li>
+            <li id="btn-space"><a href="#">Ambiente</a></li>
+            <li id="btn-classes"><a href="#">Turmas</a></li>
+            <li id="btn-hours"><a href="#">Horários</a></li>
+            <li id="btn-coach"><a href="#">Professor</a></li>
+            <li id="btn-patrocinio"><a href="#">Patrocínio</a></li>
+            <li><a href="javascript:clickButton()">Fale Conosco</a></li>
+
+
+        </ul>
+        <div id="menu-toggle">
+            <button id="btn-toggle" onclick="showToggle()">
+                <img src="./img/menu.png" alt="">
+            </button>
+        </div>
+
+    </header>
+
+
+
+
+    <div class="bg-start">
+
+
+
+
+        <!----------------------------------------HOME------------------------------------------------>
+        <section id="first-section">
+
+            <div class="mascara"></div>
+
+            <div id="logo-side">
+                <img src="./img/logo-header.jpg" alt="logo" id="logo-img">
+                <div id="descricao">
+                    <p id="p1">Descubra a arte do Muay Thai e do Kickboxing na <span>GM THAI.</span></p>
+                    <p id="p2">Experimente uma aula gratuita e seja recebido de braços abertos
+                        para explorar todo o potencial dessas modalidades empolgantes.
+                        Nossa academia oferece um ambiente acolhedor e profissionais experientes
+                        prontos para guiá-lo em sua jornada de desenvolvimento físico e mental.
+                        Venha se juntar a nós e descubra
+                        o que o mundo das artes marciais pode oferecer
+                    </p>
+                </div>
+                <button id="btn" onclick="clickButton()">Entre em Contato</button>
+            </div>
+
+            <section id="side-treino-banner">
+
+                <img src="img/treino.jpg" alt="mario" id="treino-img">
+            </section>
+        </section>
+
+    </div>
+
+    <!----------------------------------------------ESPAÇO------------------------------------------------>
+
+    <section class="space-section">
+        <div class="space-mask"></div>
+        <h1>Conheça nosso Espaço</h1>
+
+        <div class="main-space-1">
+
+            <video id="video1" autoplay muted loop>
+                <source src="./img/video.mp4" type="video/mp4">
+            </video>
+
+
+            <div class="info-space-1">
+                <ul>
+                    <li><i class="gg-check-o"></i>Área de treinamento de combate</li>
+                    <li><i class="gg-check-o"></i>Luvas</li>
+                    <li><i class="gg-check-o"></i>Protetores bucais</li>
+                    <li><i class="gg-check-o"></i>Caneleiras</li>
+                    <li><i class="gg-check-o"></i>Ringue de luta</li>
+                    <li><i class="gg-check-o"></i>Boa Iluminação</li>
+                    <li><i class="gg-check-o"></i>Som ambiente</li>
+
+
+
+                </ul>
+                <div class="box-logo">
+                    <img src="./img/logo-header.jpg" alt="logo" class="logo-space">
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="main-space-2">
+
+            <div class="info-space-2">
+                <p>
+                    Uma energia contagiante e a determinação que encontra quem treina conosco.
+                    Desde os primeiros movimentos
+                    até os sorrisos de satisfação no final, cada momento é uma celebração
+                    do comprometimento e da
+                    camaradagem que você encontrará aqui. Junte-se a nós e descubra como
+                    o muay thai pode não só
+                    aprimorar suas habilidades de luta, mas também construir uma comunidad
+                    e vibrante e uma sensação de
+                    bem-estar duradoura. Venha fazer parte dessa jornada conosco!
+                </p>
+                <img src="./img/logo-header.jpg" alt="logo" class="logo-space">
+            </div>
+
+            <video id="video2" autoplay muted loop>
+                <source src="./img/video2.mp4" type="video/mp4">
+
+            </video>
+
+
+        </div>
+    </section>
+
+
+    <!--------------------------------------------TURMAS------------------------------------------------>
+
+    <section class="classes-section">
+
+        <div class="classes-mask"></div>
+        <ul class="list-services">
+
+            <li class="card-list">
+                <div class="image-side">
+                    <h1 class="title-card">
+                        Turma Kids
+                    </h1>
+                    <img src="./img/kids.jpg" class="img-list">
+                </div>
+                <div class="info-card">
+                    <p>Nas turmas de Muay Thai para crianças, as aulas são divertidas e educativas, começando com
+                        atividades de aquecimento e ensino de técnicas adaptadas à idade deles. Promovemos valores
+                        como respeito e disciplina e encerramos com jogos que reforçam o aprendizado, garantindo uma
+                        experiência enriquecedora e divertida para os pequenos.
+                    </p>
+                </div>
+
+                <div class="card-logo">
+                    <img src="./img/logo-header.jpg">
+                </div>
+            </li>
+
+            <li class="card-list">
+                <div class="image-side">
+                    <h1 class="title-card">
+                        Turma Adulta, Jovem
+                    </h1>
+                    <img src="./img/adult.jpg" class="img-list">
+                </div>
+                <div class="info-card">
+                    <p>
+                        Para adultos, focamos no desenvolvimento técnico e físico dos alunos.
+                        Iniciamos com um aquecimento completo, seguido pela prática de técnicas e treinos
+                        específicos de resistência e condicionamento. Ao final, reservamos um tempo para revisão e
+                        esclarecimento de dúvidas. O objetivo é oferecer uma experiência de aprendizado gratificante
+                        e progressiva, promovendo o desenvolvimento consistente das habilidades no Muay Thai.
+                    </p>
+                </div>
+
+                <div class="card-logo">
+                    <img src="./img/logo-header.jpg">
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!--------------------------------------------DIAS------------------------------------------------->
+
+    <section class="days-section">
+
+        <div class="days-mask"></div>
+
+        <h1 id="days-title">Dias de Treino</h1>
+
+        <div class="container-days">
+
+            <div class="adultDays">
+                <ul>
+                    <h1>Turma Adulta, Jovem</h1>
+                    <li class="morning">
+                        <h2>MANHÃ</h2>
+                        <div class="info-day">
+                            <h3>Segunda | Quarta | Sexta</h3>
+                            <h3>08:00 AS 09:00</h3>
+                        </div>
+
+                    </li>
+
+                    <li class="night">
+
+                        <h2>NOITE</h2>
+
+                        <h3>SEMANAS ALTERNADAS</h3>
+                        <div class="info-day">
+                            <h3>Segunda | Quarta | Sexta</h3>
+                            <h4>19:00 AS 20:00</h4>
+                        </div>
+                        <div class="info-day">
+                            <h3>Terça | Quinta</h3>
+                            <h4>20:00 AS 21:00</h4>
+                        </div>
+
+                    </li>
+
+                    <!-- <button class="dayBtn" onclick="marcarTreino()">Marcar Aula</button> -->
+
+                </ul>
+            </div>
+
+            <div class="kidsDays">
+                <ul>
+                    <li class="kids-week">
+                        <h1>Turma Kids</h1>
+                        <h2>NOITE</h2>
+                        <h3>SEMANAS ALTERNADAS</h3>
+                        <div class="info-day">
+                            <h3>Segunda | Quarta | Sexta</h3>
+                            <h4>18:00 AS 19:00</h4>
+                        </div>
+                        <div class="info-day">
+                            <h3>Terça | Quinta</h3>
+                            <h4>18:00 AS 19:00</h4>
+                        </div>
+                    </li>
+                    <!-- <button class="dayBtn">Marcar Aula</button> -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------------------------PROFESSOR------------------------------------------------>
+
+    <section class="coach-section">
+
+        <div class="coach-mask"></div>
+        <div class="main-coach">
+
+            <div class="info-coach">
+
+                <p>
+                    Conheça nosso professor: <span>Gustavo Barros</span>, um mestre na arte
+                    da luta, dedicado a orientar e inspirar seus alunos.
+                    Com sua vasta experiência e paixão contagiante, ele molda
+                    lutadores habilidosos e pessoas disciplinadas.
+                    Sob sua orientação, desenvolvemos não apenas técnicas
+                    de combate,
+                    mas também valores essenciais para a vida.
+                </p>
+
+
+            </div>
+
+
+
+            <img src="./img/mentor.jpg" alt="" id="coach-img">
+        </div>
+    </section>
+
+
+    <section class="patrocinio-section">
+
+        <div class="main-patrocionio">
+            <h1>Patrocinadores</h1>
+            <div class="images-patrocinio">
+                <img src="./img/mixetop.jpg" alt="">
+                <img src="./img/patrocinio2.jpg" alt="">
+                <img src="./img/patrocinio1.jpg" alt="">
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <form id="fale-conosco">
+     
+        <input placeholder="Seu Nome" type="text" name="Nome" id="inputName">
+        <input placeholder="Seu Número, Ex: (xx) xxxxx-xxxx" type="tel" name="Telefone" maxlength="15" id="inputNumber"
+            onkeyup="handlePhone(event)">
+        <textarea placeholder="Digite sua mensagem" name="Mensagem" id="inputText"></textarea>
+        <button id="btn" class="btn-orcamento" onclick="enviarForm()">Mandar Mensagem</button>
+    </form>
+    <div id="mascara-formulario" onclick="desligarMascara()"></div>
+
+    <!-- <form id="marcar-treino">
+        <input placeholder="Seu Nome" type="text" name="Nome" id="inputName">
+        <input placeholder="Seu Número, Ex: (xx) xxxxx-xxxx" type="tel" name="Telefone" maxlength="15" id="inputNumber"
+            onkeyup="handlePhone(event)">
+            <label for="Day">Manhã</label>
+            <select id="Day">
+                <option value="A">sus</option>
+            </select>
+            <select id="Hour">
+                <option value=""></option>
+            </select>
+        <textarea placeholder="Digite sua mensagem" name="Mensagem" id="inputText"></textarea>
+        <button id="btn" class="btn-orcamento" onclick="enviarForm()">Marcar Treino</button>
+    </form>
+    <div id="mascara-formulario" onclick="desligarMascara()"></div> -->
+
+
+    <div class="link-insta">
+        <a href="https://www.instagram.com/academia_gmthai/" target="_blank">
+            <img src="./img/Instagram-Icon.png" alt="instagram-img" id="insta-img">
+        </a>
+    </div>
+
+
+    <footer>
+        Copyright © George Lucas. All rights reserved.
+    </footer>
+</body>
+<script src="./scripts.js"></script>
+<script src="./videoAnimation.js"></script>
+
+</html>

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.coach-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.coach-section {
+    z-index: 0;
+    position: relative;
+    background: linear-gradient(90deg, rgba(51, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 49%, rgba(57, 0, 0, 1) 100%);
+    background-image: url(./img/character.jpg);
+    background-repeat: no-repeat;
+    background-position-y: -60px;
+    padding: 70px 0;
+    color: white;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100vw;
+
+
+}
+
+
+
+.main-coach {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.coach-section img {
+    border: 3px solid red;
+    box-shadow: 0 0 15px red;
+    border-radius: 25px;
+    width: 500px;
+    height: 470px;
+}
+
+
+.info-coach {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-image: linear-gradient(to right bottom, #000000, #090909, #111111, #171717, #1c1c1c); */
+    border-radius: 20px;
+    padding: 0 20px;
+    width: 400px;
+    height: 100%;
+    background-size: cover;
+
+}
+
+
+.info-coach p {
+    letter-spacing: 1px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+
+}
+
+.info-coach span {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: red;
+}
+
+@media screen and (width < 1200px) {
+
+    .main-coach {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .coach-section {
+        padding: 0;
+        
+        background-position-x: -180px;
+    }
+}
+
+
+
+@media screen and (width < 600px) {
+
+    .coach-section{
+        padding-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .main-coach img {
+        width: 400px;
+        height: 370px;
+    }
+
+    .info-coach p {
+
+        align-items: center;
+        font-size: 20px;
+
+    }
+
+    .main-coach {
+
+        gap: 10px;
+    }
+}
+
+@media screen and (width < 470px) {
+
+    .main-coach img {
+        width: 300px;
+        height: 270px;
+    }
+
+    .info-coach{
+        width: 340px;
+    }
+    .info-coach p {
+
+        align-items: center;
+        font-size: 18px;
+
+    }
+   
+}
