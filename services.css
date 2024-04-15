@@ -42,8 +42,9 @@
     background-position: center;
     background-size: cover;
     display: flex;
-    width: 100%;
+    width: 100vw;
     padding-top: 80px;
+    
 
 
 

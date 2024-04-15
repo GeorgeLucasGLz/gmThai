@@ -16,12 +16,13 @@
 header {
     z-index: 1000;
     top: 0;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 15px;
     margin-top: 10px;
+    overflow-x: hidden;
 
 }
 
@@ -41,7 +42,7 @@ body {
 
 header #links {
 
-
+    overflow-x: hidden;
     z-index: 1000;
     position: fixed;
     display: flex;
@@ -88,10 +89,12 @@ header a:hover {
     display: flex;
     justify-content: space-evenly;
     color: white;
-    height: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
-    margin-top: 50px
+    margin-top: 50px;
+    overflow-x: hidden;
+
 }
 
 #logo-side {
@@ -179,10 +182,11 @@ p {
 }
 
 .patrocinio-section {
+
+    width: 100vw;
     z-index: 0;
     display: flex;
     justify-content: center;
-    width: 100%;
     padding: 20px 0 50px 0;
     background-image: linear-gradient(to top, #1b1818, #161414, #110e0f, #090808, #000000);
 }
@@ -214,7 +218,6 @@ p {
 footer {
     z-index: 1;
     width: 100vw;
-    height: 100vh;
     text-align: center;
     padding: 10px 0;
 }
@@ -323,7 +326,7 @@ textarea {
 
     .bg-start {
 
-        background-position-x: -350px;
+       
         background-color: black;
 
 
@@ -460,6 +463,14 @@ textarea {
 }
 
 @media (width < 850px) {
+    .bg-start {
+
+       
+    
+        background-position-x: -350px;
+
+    }
+    
 
     .images-patrocinio {
 

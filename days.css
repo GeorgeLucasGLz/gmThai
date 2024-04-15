@@ -34,6 +34,8 @@ h1 {
 }
 
 .days-section {
+
+    width: 100vw;
     z-index: 1;
     position: relative;
     background-image: url(./img/days-bg.jpg);
@@ -45,15 +47,19 @@ h1 {
     align-items: center;
 }
 
-.container-days {
 
+/*ESSE ARROMBADO DO WIDTH FUDEU TUDO PQ TAVA EM 800PX*/
+.container-days {
+  
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: center;
-    width: 800px;
+    width: 100%;
     margin-bottom: 80px;
+    
 }
+
 
 .container-days ul {
     text-shadow: 2px 3px 1px black;
