@@ -2,6 +2,7 @@ const form = document.getElementById('fale-conosco')
 const botao = document.getElementById('btn')
 const mascara = document.querySelector('#mascara-formulario')
 const btnToggle = document.getElementById('btn-toggle')
+const Body = document.querySelector('body')
 // const marcarForm = document.querySelector('#marcar-treino')
 
 
@@ -27,13 +28,18 @@ function showToggle() {
 
 
 
+
+
+
 function clickButton() {
-   
+
     form.style.left = "50%"
     form.style.transform = "translateX(-50%)"
     mascara.style.visibility = "visible"
     form.style.transition = "0.4s ease-in"
     ulToggleBox.style.visibility = 'hidden'
+
+
 }
 
 // function marcarTreino() {
@@ -45,39 +51,24 @@ function clickButton() {
 //     ulToggleBox.style.visibility = 'hidden'
 // }
 
+
 function desligarMascara() {
 
     form.style.left = '-340px'
     mascara.style.visibility = "hidden"
     form.style.transform = 'translateX(0%)'
     mascara.style.transition = '0.4s ease-in'
-    ulToggleBox.style.visibility = 'visible'
-    ulToggleBox.style.visibility = 'hidden'
 
-
-
-}
-
-window.onload = function () {
-    verificarTamanhoJanela();
-};
-// Verifica o tamanho da janela quando ela é redimensionada
-window.onresize = function () {
-    verificarTamanhoJanela();
-};
-
-function verificarTamanhoJanela() {
-
-    let mainImage = document.querySelector('#logo-img')
-    let larguraJanela = window.innerWidth
-
-    if (larguraJanela < 1100) {
-
-        mainImage.src = './img/logo-header.jpg'
+    if (window.innerWidth < 1000){
+        ulToggleBox.style.visibility = 'hidden'  
     } else {
-        mainImage.src = './img/logo-header.jpg'
+        ulToggleBox.style.visibility = 'visible' 
     }
+    
+
 }
+
+
 
 //Formatar número
 
@@ -117,16 +108,16 @@ function enviarForm() {
     // if (name.length || number.length === 0) {
     //     alert('Preencha as informações')
     // } else {
-        const url = "https://wa.me/" + bossNumber + "?text="
-            + msgDefault + "%0A%0A"
-            + "Nome: " + name + "." + "%0a"
-            + "Número: " + number + "." + "%0a"
-            + "Mensagem: " + message + "." + "%0a%0a"
-            + msgInsta + "%0A%0A";
-        window.open(url, '_blank').focus()
+    const url = "https://wa.me/" + bossNumber + "?text="
+        + msgDefault + "%0A%0A"
+        + "Nome: " + name + "." + "%0a"
+        + "Número: " + number + "." + "%0a"
+        + "Mensagem: " + message + "." + "%0a%0a"
+        + msgInsta + "%0A%0A";
+    window.open(url, '_blank').focus()
 
-        
-    }
+
+}
 
 
 
@@ -158,8 +149,13 @@ btnHome.addEventListener('click', (event) => {
 
     event.preventDefault()
     scrollIntoElement('header')
-    ulToggleBox.style.visibility = 'hidden'
     mascara.style.visibility = "hidden"
+    if (window.innerWidth < 1000){
+        ulToggleBox.style.visibility = 'hidden'
+    } else{
+        ulToggleBox.style.visibility = 'visible'
+    }
+    
 
     return
 })
@@ -168,9 +164,13 @@ btnSpace.addEventListener('click', (event) => {
 
     event.preventDefault()
     scrollIntoElement('.space-section')
-    ulToggleBox.style.visibility = 'hidden'
     mascara.style.visibility = "hidden"
 
+    if (window.innerWidth < 1000){
+        ulToggleBox.style.visibility = 'hidden'
+    } else{
+        ulToggleBox.style.visibility = 'visible'
+    }
     return
 
 })
@@ -179,8 +179,13 @@ btnClasses.addEventListener('click', (event) => {
 
     event.preventDefault()
     scrollIntoElement('.classes-section')
-    ulToggleBox.style.visibility = 'hidden'
     mascara.style.visibility = "hidden"
+
+    if (window.innerWidth < 1000){
+        ulToggleBox.style.visibility = 'hidden'
+    } else{
+        ulToggleBox.style.visibility = 'visible'
+    }
 
     return
 
@@ -190,8 +195,13 @@ btnHours.addEventListener('click', (event) => {
 
     event.preventDefault()
     scrollIntoElement('.days-section')
-    ulToggleBox.style.visibility = 'hidden'
     mascara.style.visibility = "hidden"
+
+    if (window.innerWidth < 1000){
+        ulToggleBox.style.visibility = 'hidden'
+    } else{
+        ulToggleBox.style.visibility = 'visible'
+    }
 
     return
 })
@@ -199,8 +209,13 @@ btnHours.addEventListener('click', (event) => {
 btnCoach.addEventListener('click', (event) => {
     event.preventDefault()
     scrollIntoElement('.coach-section')
-    ulToggleBox.style.visibility = 'hidden'
     mascara.style.visibility = "hidden"
+
+    if (window.innerWidth < 1000){
+        ulToggleBox.style.visibility = 'hidden'
+    } else{
+        ulToggleBox.style.visibility = 'visible'
+    }
 
     return
 })
@@ -209,8 +224,13 @@ btnPatrocinio.addEventListener('click', (event) => {
 
     event.preventDefault()
     scrollIntoElement('.patrocinio-section')
-    ulToggleBox.style.visibility = 'hidden'
     mascara.style.visibility = "hidden"
+
+    if (window.innerWidth < 1000){
+        ulToggleBox.style.visibility = 'hidden'
+    } else{
+        ulToggleBox.style.visibility = 'visible'
+    }
 
     return
 })
