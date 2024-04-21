@@ -25,9 +25,9 @@
     justify-content: center;
     gap: 50px;
     width: 100vw;
-  
-    
-   
+
+
+
 
 
 }
@@ -83,7 +83,7 @@
     color: red;
 }
 
-@media screen and (width < 1200px) {
+@media screen and (min-width: 0px) and (max-width : 1200px) {
 
     .main-coach {
         display: flex;
@@ -92,16 +92,16 @@
 
     .coach-section {
         padding: 0;
-        
+
         background-position-x: -180px;
     }
 }
 
 
 
-@media screen and (width < 600px) {
+@media screen and (min-width: 0px) and (max-width : 600px) {
 
-    .coach-section{
+    .coach-section {
         padding-bottom: 50px;
         margin-top: 50px;
     }
@@ -124,21 +124,22 @@
     }
 }
 
-@media screen and (width < 470px) {
+@media screen and (min-width: 0px) and (max-width : 470px) {
 
     .main-coach img {
         width: 300px;
         height: 270px;
     }
 
-    .info-coach{
+    .info-coach {
         width: 340px;
     }
+
     .info-coach p {
 
         align-items: center;
         font-size: 18px;
 
     }
-   
+
 }

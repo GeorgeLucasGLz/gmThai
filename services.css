@@ -190,7 +190,7 @@ textarea {
     background-color: rgb(53, 53, 53);
 }
 
-@media screen and (max-width: 1320px) {
+@media screen and (min-width: 0px) and (max-width: 1320px) {
 
     .list-services {
         grid-template-columns: repeat(1, 1fr);
@@ -206,7 +206,7 @@ textarea {
 
 }
 
-@media screen and(width < 1080px) {
+@media screen and (min-width: 0px) and (max-width : 1080px) {
     .classes-section {
 
         background-image: url(./img/ringue2.jpg);
@@ -220,7 +220,7 @@ textarea {
     }
 }
 
-@media screen and (width < 850px) {
+@media screen and (min-width: 0px) and (max-width : 850px) {
     .img-list {
 
         margin: 0 auto;
@@ -238,7 +238,7 @@ textarea {
 
 }
 
-@media (width < 780px) {
+@media screen and (min-width: 0px) and (max-width : 780px) {
 
 
     .card-list {
@@ -268,7 +268,7 @@ textarea {
 
 
 
-@media screen and (width < 470px) {
+@media screen and (min-width: 0px) and (max-width : 470px) {
     .img-list {
         width: 270px;
         height: 200px;
@@ -308,7 +308,7 @@ textarea {
     }
 }
 
-@media screen and (width < 450px) {
+@media screen and (min-width: 0px) and (max-width : 450px) {
 
 
 
@@ -346,7 +346,7 @@ textarea {
 }
 
 
-@media screen and(width < 350px) {
+@media screen and (min-width: 0px) and (max-width : 350px) {
     header a {
         font-size: 13px;
     }

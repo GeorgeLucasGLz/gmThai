@@ -322,7 +322,7 @@ textarea {
     background-color: rgb(53, 53, 53);
 }
 
-@media screen and (width < 1320px) {
+@media screen and (min-width: 0px) and (max-width : 1320px) {
 
     .bg-start {
 
@@ -422,7 +422,7 @@ textarea {
 
 }
 
-@media (width < 1000px) {
+@media screen and (min-width: 0px) and (max-width : 1000px) {
 
     header #links {
         visibility: hidden;
@@ -462,7 +462,7 @@ textarea {
 
 }
 
-@media (width < 850px) {
+@media screen and (min-width: 0px) and (max-width : 850px) {
     .bg-start {
 
        
@@ -488,7 +488,7 @@ textarea {
 
 
 
-@media (width < 650px) {
+@media screen and (min-width: 0px) and (max-width : 650px) {
     #treino-img {
 
         width: 450px;
@@ -507,7 +507,7 @@ textarea {
 
 }
 
-@media (width < 520px) {
+@media screen and (min-width: 0px) and (max-width : 520px) {
     #treino-img {
 
         width: 350px;
@@ -526,13 +526,13 @@ textarea {
 
 }
 
-@media (width <405px) {
+@media screen and (min-width: 0px) and (max-width : 405px) {
     #links a {
         font-size: 13px;
     }
 }
 
-@media (width < 400px) {
+@media screen and (min-width: 0px) and (max-width : 400px) {
     #treino-img {
 
         width: 300px;
