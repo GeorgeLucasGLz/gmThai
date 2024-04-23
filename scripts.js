@@ -108,7 +108,7 @@ function enviarForm() {
     // if (name.length || number.length === 0) {
     //     alert('Preencha as informações')
     // } else {
-    const url = "https://wa.me/" + bossNumber + "?text="
+    const url = "https://api.whatsapp.com/send?phone=" + bossNumber + "&text="
         + msgDefault + "%0A%0A"
         + "Nome: " + name + "." + "%0a"
         + "Número: " + number + "." + "%0a"
