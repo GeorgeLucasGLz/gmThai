@@ -27,7 +27,6 @@
             <li id="btn-classes"><a href="#">Turmas</a></li>
             <li id="btn-hours"><a href="#">Horários</a></li>
             <li id="btn-coach"><a href="#">Professor</a></li>
-            <!-- <li id="btn-patrocinio"><a href="#">Patrocínio</a></li> -->
             <li><a href="https://api.whatsapp.com/send?phone=5585986753855">Fale Conosco</a></li>
 
 
@@ -198,60 +197,56 @@
 
         <h1 id="days-title">Dias de Treino</h1>
 
-        <div class="container-days">
+        <ul class="container-days">
 
-            <div class="adultDays">
-                <ul>
-                    <h1>Turma Adulta, Jovem</h1>
-                    <li class="morning">
-                        <h2>MANHÃ</h2>
-                        <div class="info-day">
-                            <h3>Segunda | Quarta | Sexta</h3>
-                            <h3>08:00 AS 09:00</h3>
-                        </div>
+            <li class="adultDays">
+                <h1>Turma Adulta, Jovem</h1>
+                <div class="morning">
+                    <h2>MANHÃ</h2>
+                    <div class="info-day">
+                        <h3>Segunda | Quarta | Sexta</h3>
+                        <h3>08:00 AS 09:00</h3>
+                    </div>
 
-                    </li>
+                </div>
 
-                    <li class="night">
+                <div class="night">
 
-                        <h2>NOITE</h2>
+                    <h2>NOITE</h2>
 
-                        <h3>SEMANAS ALTERNADAS</h3>
-                        <div class="info-day">
-                            <h3>Segunda | Quarta | Sexta</h3>
-                            <h4>19:00 AS 20:00</h4>
-                        </div>
-                        <div class="info-day">
-                            <h3>Terça | Quinta</h3>
-                            <h4>20:00 AS 21:00</h4>
-                        </div>
+                    <h3>SEMANAS ALTERNADAS</h3>
+                    <div class="info-day">
+                        <h3>Segunda | Quarta | Sexta</h3>
+                        <h4>19:00 AS 20:00</h4>
+                    </div>
+                    <div class="info-day">
+                        <h3>Terça | Quinta</h3>
+                        <h4>20:00 AS 21:00</h4>
+                    </div>
 
-                    </li>
+                </div>
 
-                    <!-- <button class="dayBtn" onclick="marcarTreino()">Marcar Aula</button> -->
+            </li>
 
-                </ul>
-            </div>
+            <li class="kidsDays">
 
-            <div class="kidsDays">
-                <ul>
-                    <li class="kids-week">
-                        <h1>Turma Kids</h1>
-                        <h2>NOITE</h2>
-                        <h3>SEMANAS ALTERNADAS</h3>
-                        <div class="info-day">
-                            <h3>Segunda | Quarta | Sexta</h3>
-                            <h4>18:00 AS 19:00</h4>
-                        </div>
-                        <div class="info-day">
-                            <h3>Terça | Quinta</h3>
-                            <h4>18:00 AS 19:00</h4>
-                        </div>
-                    </li>
-                    <!-- <button class="dayBtn">Marcar Aula</button> -->
-                </ul>
-            </div>
-        </div>
+                <div class="kids-week">
+                    <h1>Turma Kids</h1>
+                    <h2>NOITE</h2>
+                    <h3>SEMANAS ALTERNADAS</h3>
+                    <div class="info-day">
+                        <h3>Segunda | Quarta | Sexta</h3>
+                        <h4>18:00 AS 19:00</h4>
+                    </div>
+                    <div class="info-day">
+                        <h3>Terça | Quinta</h3>
+                        <h4>18:00 AS 19:00</h4>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+
     </section>
 
     <!--------------------------------------------PROFESSOR------------------------------------------------>
@@ -283,27 +278,8 @@
     </section>
 
 
-    <!-- <section class="patrocinio-section">
-
-        <div class="main-patrocionio">
-            <h1>Patrocinadores</h1>
-            <div class="images-patrocinio">
-                <img src="./img/mixetop.jpg" alt="">
-                <img src="./img/patrocinio2.jpg" alt="">
-                <img src="./img/patrocinio1.jpg" alt="">
-
-            </div>
-
-        </div>
-    </section> -->
-
-
-
-
-
-
     <form id="fale-conosco">
-     
+
         <input placeholder="Seu Nome" type="text" name="Nome" id="inputName">
         <input placeholder="Seu Número, Ex: (xx) xxxxx-xxxx" type="tel" name="Telefone" maxlength="15" id="inputNumber"
             onkeyup="handlePhone(event)">
@@ -311,22 +287,6 @@
         <button id="btn" class="btn-orcamento" onclick="enviarForm()">Mandar Mensagem</button>
     </form>
     <div id="mascara-formulario" onclick="desligarMascara()"></div>
-
-    <!-- <form id="marcar-treino">
-        <input placeholder="Seu Nome" type="text" name="Nome" id="inputName">
-        <input placeholder="Seu Número, Ex: (xx) xxxxx-xxxx" type="tel" name="Telefone" maxlength="15" id="inputNumber"
-            onkeyup="handlePhone(event)">
-            <label for="Day">Manhã</label>
-            <select id="Day">
-                <option value="A">sus</option>
-            </select>
-            <select id="Hour">
-                <option value=""></option>
-            </select>
-        <textarea placeholder="Digite sua mensagem" name="Mensagem" id="inputText"></textarea>
-        <button id="btn" class="btn-orcamento" onclick="enviarForm()">Marcar Treino</button>
-    </form>
-    <div id="mascara-formulario" onclick="desligarMascara()"></div> -->
 
 
     <div class="link-insta">
@@ -338,8 +298,8 @@
 
     <footer>
         <a href="https://georgelucasglz.github.io/My-Porfolio-George-Lucas/">
-        Copyright © George Lucas. All rights reserved.
-    </a>
+            Copyright © George Lucas. All rights reserved.
+        </a>
     </footer>
 </body>
 <script src="./scripts.js"></script>

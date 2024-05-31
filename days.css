@@ -14,8 +14,6 @@
     z-index: -1;
     opacity: 0.7;
 
-
-
 }
 
 #days-title {
@@ -27,15 +25,11 @@
     text-align: center;
 }
 
-h1 {
-
-    color: white;
-    text-align: center;
-}
-
 .days-section {
 
-    width: 100vw;
+
+    width: 100%;
+    height: auto;
     z-index: 1;
     position: relative;
     background-image: url(./img/days-bg.jpg);
@@ -45,63 +39,49 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
 }
 
-
-/*ESSE ARROMBADO DO WIDTH FUDEU TUDO PQ TAVA EM 800PX*/
 .container-days {
-  
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: center;
-    width: 100%;
+    justify-content: center;
+    width: 80%;
+    gap: 30px;
     margin-bottom: 80px;
-    
+
+
 }
 
-
-.container-days ul {
-    text-shadow: 2px 3px 1px black;
+.container-days li {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 30px;
+    height: 100%;
     border: 2px solid red;
     box-shadow: 0 0 10px red;
     border-radius: 10px;
-    padding: 15px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 350px;
-    height: 550px;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-
-.container-days .morning {
-
-
-    border-radius: 10px;
-
-}
-
-.morning h2 {
-    color: red;
+.container-days li h2 {
+    color: rgb(255, 0, 0);
     text-shadow: 2px 2px 5px black;
 }
 
-.container-days .night {
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 10px;
-
+.adultDays .night h2{
+    margin-top: 15px;
+   
 }
 
-.night h2 {
-    color: red;
-}
 
 .container-days .info-day {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
     border: 2px solid red;
     border-radius: 10px;
     box-shadow: 0 0 5px red;
@@ -109,87 +89,23 @@ h1 {
     margin-top: 15px;
 }
 
-.kids-week h2 {
-    color: red;
-}
-
-.dayBtn {
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: 17px;
-    font-weight: bold;
-    background-color: red;
-    border-radius: 15px;
-    width: 80%;
-    margin-top: 20px;
-    height: 40px;
-    border: 2px solid red;
-    box-shadow: 0 0 5px red;
-}
-
-#marcar-treino {
-
-    z-index: 1;
-    top: 10%;
-    left: -340px;
-    background-color: rgb(34, 34, 34);
-    position: fixed;
-    gap: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    justify-content: end;
-    width: 350px;
-}
-
-
 
 @media screen and (min-width: 0px) and (max-width : 850px) {
 
+
+
     .container-days {
         grid-template-columns: repeat(1, 1fr);
+        width: 80%;
         gap: 50px;
-
     }
-
-
-    .container-days ul {
-
-        width: 550px;
-
-    }
-
-    .kidsDays ul {
-
-        height: 350px;
-    }
-
 
 }
 
 @media screen and (min-width: 0px) and (max-width : 600px) {
-
-    .container-days ul {
-
-        width: 400px;
-
-    }
 
     #fale-conosco {
 
         width: 300px;
     }
 }
-
-@media screen and (min-width: 0px) and (max-width : 470px) {
-
-    .container-days ul {
-
-        width: 320px;
-
-    }
-
-
-}
-
