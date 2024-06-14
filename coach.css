@@ -15,7 +15,7 @@
     z-index: 0;
     position: relative;
     background: linear-gradient(90deg, rgba(51, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 49%, rgba(57, 0, 0, 1) 100%);
-    background-image: url(./img/character.jpg);
+    background-image: url(./img/character.webp);
     background-repeat: no-repeat;
     background-position-y: -60px;
     padding: 70px 0;

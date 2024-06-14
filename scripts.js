@@ -42,14 +42,6 @@ function clickButton() {
 
 }
 
-// function marcarTreino() {
-//     marcarForm.style.top = '10%'
-//     marcarForm.style.left = "50%"
-//     marcarForm.style.transform = "translateX(-50%)"
-//     mascara.style.visibility = "visible"
-//     marcarForm.style.transition = "0.4s ease-in"
-//     ulToggleBox.style.visibility = 'hidden'
-// }
 
 
 function desligarMascara() {

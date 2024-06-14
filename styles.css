@@ -76,7 +76,7 @@ header a:hover {
 .bg-start {
     z-index: 0;
     background-size: cover;
-    background-image: url(./img/banner.jpg);
+    background-image: url(./img/banner.webp);
     background-repeat: no-repeat;
     background-color: black;
     background-position: center;

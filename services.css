@@ -38,7 +38,7 @@
 
     z-index: 0;
     position: relative;
-    background-image: url(./img/ringue2.jpg);
+    background-image: url(./img/ringue.webp);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -218,7 +218,7 @@ textarea {
 @media screen and (min-width: 0px) and (max-width : 1080px) {
     .classes-section {
 
-        background-image: url(./img/ringue2.jpg);
+   
         background-position: center;
         background-size: cover;
         display: flex;

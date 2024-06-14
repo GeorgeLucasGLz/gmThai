@@ -32,7 +32,7 @@
     height: auto;
     z-index: 1;
     position: relative;
-    background-image: url(./img/days-bg.jpg);
+    background-image: url(./img/days-bg.webp);
     background-size: cover;
     background-position: center;
     display: flex;
